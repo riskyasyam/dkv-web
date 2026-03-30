@@ -1,6 +1,7 @@
 @php
     use App\Models\Portfolio;
     use Illuminate\Support\Facades\Schema;
+    use Illuminate\Support\Facades\Storage;
 
     $allPortfolios = collect();
     if (Schema::hasTable('portfolios')) {
@@ -65,8 +66,8 @@
 
                         return [
                             'title' => $item->title,
-                            'image' => $item->image ? asset('storage/' . $item->image) : $youtubeThumb,
-                            'pdf' => $item->pdf ? asset('storage/' . $item->pdf) : null,
+                            'image' => $item->image ? Storage::url($item->image) : $youtubeThumb,
+                            'pdf' => $item->pdf ? Storage::url($item->pdf) : null,
                             'hasPdf' => (bool) $item->pdf,
                             'hasYoutube' => (bool) $youtubeId,
                         ];
@@ -78,8 +79,8 @@
                         return [
                             'title' => $item->title,
                             'description' => $item->description,
-                            'image' => $item->image ? asset('storage/' . $item->image) : null,
-                            'pdf' => $item->pdf ? asset('storage/' . $item->pdf) : null,
+                            'image' => $item->image ? Storage::url($item->image) : null,
+                            'pdf' => $item->pdf ? Storage::url($item->pdf) : null,
                             'youtubeUrl' => $item->youtube_url,
                             'youtubeEmbed' => $youtubeId ? 'https://www.youtube.com/embed/' . $youtubeId : null,
                         ];
