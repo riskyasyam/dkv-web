@@ -120,7 +120,7 @@
                                 <img :src="slide.image" :alt="slide.title" class="h-full w-full object-cover">
                             </template>
                             <template x-if="!slide.image && slide.pdf">
-                                <embed :src="slide.pdf" type="application/pdf" class="h-full w-full">
+                                <iframe :src="slide.pdf + '#toolbar=0&navpanes=0&scrollbar=0'" class="h-full w-full" loading="lazy"></iframe>
                             </template>
                             <template x-if="!slide.image && !slide.pdf">
                                 <div class="flex h-full w-full items-center justify-center bg-linear-to-br from-[#1A1A1A] via-[#E4572E] to-[#FF8C42]">
@@ -187,7 +187,7 @@
                                                         <img :src="item.image" :alt="item.title" class="h-full w-full object-cover">
                                                     </template>
                                                     <template x-if="!item.youtubeEmbed && !item.image && item.pdf">
-                                                        <embed :src="item.pdf" type="application/pdf" class="h-full w-full">
+                                                        <iframe :src="item.pdf + '#toolbar=0&navpanes=0&scrollbar=0'" class="h-full w-full" loading="lazy"></iframe>
                                                     </template>
                                                 </div>
 
