@@ -77,11 +77,20 @@ class ProductController extends Controller
 
     private function validateProduct(Request $request): array
     {
-        return $request->validate([
+        $data = $request->validate([
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'price' => ['nullable', 'numeric', 'min:0'],
+            'has_price' => ['nullable', 'boolean'],
             'image' => ['nullable', 'image', 'mimes:jpg,jpeg,png,webp', 'max:2048'],
         ]);
+
+        if (! $request->boolean('has_price')) {
+            $data['price'] = null;
+        }
+
+        unset($data['has_price']);
+
+        return $data;
     }
 }

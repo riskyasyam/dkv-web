@@ -1,4 +1,9 @@
-<x-layouts.admin title="Edit Product | Admin">
+@extends('admin.layout')
+
+@section('title', 'Edit Product')
+@section('page_title', 'Edit Product')
+
+@section('content')
     <div class="max-w-3xl rounded-3xl border border-[#1A1A1A]/10 bg-white p-6 sm:p-8">
         <h1 class="font-display text-3xl font-black">Edit Product</h1>
         <p class="mt-1 text-sm text-[#1A1A1A]/65">Perbarui detail produk atau layanan.</p>
@@ -14,4 +19,4 @@
             </div>
         </form>
     </div>
-</x-layouts.admin>
+@endsection

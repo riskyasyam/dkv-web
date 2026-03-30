@@ -9,7 +9,9 @@
 <body class="min-h-screen bg-[#fff9f5] text-[#1A1A1A]">
     <header class="border-b border-[#1A1A1A]/10 bg-white/90 backdrop-blur">
         <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <a href="{{ route('products.index') }}" class="font-display text-xl font-bold">Admin <span class="text-[#E4572E]">Products</span></a>
+            <a href="{{ route('products.index') }}" aria-label="Admin Dashboard">
+                <img src="{{ asset('images/logo.png') }}" alt="DKV SMKN 4 Logo" class="h-10 w-auto">
+            </a>
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
                 <button type="submit" class="rounded-full bg-[#1A1A1A] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-[#E4572E]">Logout</button>

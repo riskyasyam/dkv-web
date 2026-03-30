@@ -1,4 +1,9 @@
-<x-layouts.admin title="Products | Admin">
+@extends('admin.layout')
+
+@section('title', 'Products')
+@section('page_title', 'Products Management')
+
+@section('content')
     <div class="mb-6 flex items-center justify-between">
         <div>
             <h1 class="font-display text-3xl font-black">Products</h1>
@@ -47,4 +52,4 @@
     </div>
 
     <div class="mt-6">{{ $products->links() }}</div>
-</x-layouts.admin>
+@endsection
