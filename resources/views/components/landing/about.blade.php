@@ -14,7 +14,7 @@
             <h2 class="mt-3 font-display text-4xl font-black leading-tight sm:text-5xl">Core V - DKV SMKN 4 Jember</h2>
             <p class="mt-5 max-w-2xl text-base leading-relaxed text-[#1A1A1A]/75">Core V DKV SMKN 4 Jember adalah unit produksi kreatif yang dikelola oleh jurusan Desain Komunikasi Visual (DKV) SMKN 4 Jember. Hadir sebagai wadah pengembangan keterampilan siswa sekaligus penyedia layanan profesional. Kami menggabungkan kreativitas, inovasi, dan kualitas dalam setiap karya.</p>
             <p class="mt-5 max-w-2xl text-base leading-relaxed text-[#1A1A1A]/75">Kami menyediakan tiga layanan utama, yaitu</p>
-            <div class="mt-10 grid grid-cols-3 gap-4">
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 @foreach ([
                     ['service' => 'Fotografi', 'desc' => 'Dokumentasi visual profesional'],
                     ['service' => 'Merchandise', 'desc' => 'Produk custom berkualitas'],

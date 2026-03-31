@@ -24,7 +24,7 @@
                             @else
                                 <span></span>
                             @endif
-                            <a href="#cta" class="rounded-full border border-current px-4 py-2 text-xs font-semibold uppercase tracking-wide transition duration-300 group-hover:scale-105">Order Now</a>
+                            <a href="https://wa.me/6288804950999" target="_blank" rel="noopener noreferrer" class="rounded-full border border-current px-4 py-2 text-xs font-semibold uppercase tracking-wide transition duration-300 group-hover:scale-105">Order Now</a>
                         </div>
                     </div>
                 </article>
@@ -37,7 +37,7 @@
                             <p class="mt-3 text-sm leading-relaxed text-[#1A1A1A]/70 transition group-hover:text-white/85">Paket layanan fleksibel untuk kebutuhan branding, konten visual, dan promosi digital.</p>
                             <div class="mt-6 flex items-center justify-between">
                                 <p class="text-sm font-semibold">Start From Rp 350.000</p>
-                                <a href="#cta" class="rounded-full border border-current px-4 py-2 text-xs font-semibold uppercase tracking-wide transition duration-300 group-hover:scale-105">Order Now</a>
+                                <a href="https://wa.me/6288804950999" target="_blank" rel="noopener noreferrer" class="rounded-full border border-current px-4 py-2 text-xs font-semibold uppercase tracking-wide transition duration-300 group-hover:scale-105">Order Now</a>
                             </div>
                         </div>
                     </article>
